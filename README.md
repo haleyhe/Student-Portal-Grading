@@ -24,3 +24,13 @@ If a grouped student want to go solo or join another group, they will first have
 
 4. If student wants to leave a group (2+) and join another group (2+), student will have to click the leave group button and send a request to join another group
    - Course of API actions: student new-group, student send-request, anyone in new group accept-requests. 
+
+
+### API Overview
+| Route                    | Method | Description                                                                 |
+|--------------------------|--------|-----------------------------------------------------------------------------|
+| /new-group               | POST   | Change the user’s group setting for a assignment.                           |
+| /show-groups/:assignment | GET    | List all group that are available for a particular assignment.              |
+| /show-requests/:group    | GET    | Shows all group request to join a specificed group                          |
+| /send-request            | POST   | Send intent to the group member and give group member the permission to add |
+| /respond-request         | GET    | Respond to a user’s request to join the group. Can either accept or reject  |
