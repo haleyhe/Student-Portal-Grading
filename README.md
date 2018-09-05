@@ -1,6 +1,8 @@
 # Grading
 
-This is the grading API that I wrote for the student grading portal. I collaborated with the other students to create a MongoDB collection to store this information. 
+This is the grading API that I wrote for the student grading portal. I collaborated with the other students to create a MongoDB collection schema that stores the group information. 
+
+**NOTE:** This repo does not contain the full code of student grading portal. It only contains the portions that I have contributed to. 
 
 When the admin creates a new assignment, it has a boolean field called groupable. 
 - If the assignment has groupable set to false, this feature is not used.
@@ -11,7 +13,7 @@ If a solo student wants to join any individual or any group, all they need to do
 If a grouped student want to go solo or join another group, they will first have to click a leave group button.
 
 ### Scenarios to show how the grouping works
-1. If two solo students want to get together, student A just sends a request to student B. After B accepts A, place both into B’s group and delete A’s group (has no members now)
+1. If two solo students want to get together, student A just sends a request to student B. After B accepts A, place both into Bâ€™s group and delete Aâ€™s group (has no members now)
    - Course of API action: A send-request, B respond-request
 
 2. If a solo student wants to join a 2+ people group, the solo student would just request to join the group
